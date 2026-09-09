@@ -1,9 +1,7 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "pharmacology-legends",
-  "main": "./worker.js",
-  "compatibility_date": "2026-09-09",
-  "assets": {
-    "directory": "./public/"
-  }
+  "name":"pharmacology--legends",
+  "main":"worker.js",
+  "compatibility_date":"2026-09-09",
+  "assets":{"directory":"./public","binding":"ASSETS"},
+  "d1_databases":[{"binding":"DB","database_name":"pharmacology-legends-db","database_id":"PASTE_YOUR_EXISTING_DATABASE_ID_HERE"}]
 }
