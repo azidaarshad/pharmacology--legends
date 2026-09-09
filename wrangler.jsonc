@@ -3,5 +3,5 @@
   "main":"worker.js",
   "compatibility_date":"2026-09-09",
   "assets":{"directory":"./public","binding":"ASSETS"},
-  "d1_databases":[{"binding":"DB","database_name":"pharmacology-legends-db","database_id":"PASTE_YOUR_EXISTING_DATABASE_ID_HERE"}]
+  "d1_databases":[{"binding":"DB","database_name":"pharmacology-legends-db","database_id":"74302a40-7221-4a0f-873f-6ef2780a31f9"}]
 }
