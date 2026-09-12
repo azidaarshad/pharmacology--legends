@@ -32,3 +32,6 @@ Use worker.js as the Worker source. The Worker serves its embedded index.html, s
 Keep the existing D1 binding name DB and existing database. Do not create a new D1 database.
 
 PATCH: Fixed a runtime bug where the embedded HTML used an unresolved asset_js placeholder. Team buttons and original WebAudio controls now initialize correctly.
+
+
+Music: user-provided On My Way audio is embedded in worker.js; backup copy is assets/OnMyWay.mp3. SFX remain original WebAudio.
