@@ -1,7 +1,12 @@
 {
-  "name":"pharmacology--legends",
-  "main":"worker.js",
-  "compatibility_date":"2026-09-09",
-  "assets":{"directory":"./public","binding":"ASSETS"},
-  "d1_databases":[{"binding":"DB","database_name":"pharmacology-legends-db","database_id":"74302a40-7221-4a0f-873f-6ef2780a31f9"}]
+  "name": "pharmacology--legends",
+  "main": "worker.js",
+  "compatibility_date": "2026-09-12",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "pharmacology-legends-db",
+      "database_id": "74302a40-7221-4a0f-873f-6ef2780a31f9"
+    }
+  ]
 }

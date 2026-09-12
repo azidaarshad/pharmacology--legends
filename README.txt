@@ -1,33 +1,32 @@
-PHARMACOLOGY LEGENDS — LIVE CLASSROOM 60
+NSNT LEGENDS — FINAL COMPLETE BUILD
 
-CARA GUNA (LAPTOP PENSYARAH)
-1. Pastikan laptop pensyarah dan semua telefon pelatih berada pada Wi-Fi yang sama.
-2. Pastikan Python 3 dipasang.
-3. Buka folder pharma_live.
-4. Jalankan:
-   python server.py
-5. Pada laptop pensyarah buka:
-   http://localhost:8000/?gm=1
-6. Skrin Game Master akan memaparkan JOIN LINK seperti http://192.168.x.x:8000
-7. Pelatih buka link itu pada telefon, masukkan nama dan pilih Team A-F.
-   Setiap team maksimum 10 orang = 60 orang keseluruhan.
+Cloudflare Worker/D1 build.
 
-CARA MAIN
-- Game Master tekan START BATTLE.
-- Urutan terkunci mengikut pembelajaran:
-  2.0 → 2.1 → 2.2 → 2.3 → 2.4 → 2.5 → 2.6 → 2.7 → 2.8 → 2.9 → 2.10 →
-  2.11.1 → 2.11.2 → 2.11.3 → 2.11.4 → 2.11.5 → 3.0 → FINAL BOSS.
-- Pelatih jawab BETUL/SALAH sekali bagi setiap soalan.
-- Betul = Team +50 XP +20 coins.
-- Salah = Team -30 HP.
-- 50 XP boleh digunakan untuk ATTACK team lawan (-100 HP).
-- Game Master tekan NEXT QUESTION untuk bergerak dalam topik.
-- Selepas semua soalan topik selesai, tekan UNLOCK NEXT TOPIC.
-- Selepas 3.0 selesai, FINAL BOSS dibuka.
+Files:
+- worker.js — single Worker containing the 180-question bank and embedded frontend. This is the main deployment file.
+- index.html — matching frontend copy for reference/local inspection.
+- assets/ — 22 topic visual PNGs (1.1–1.6, 2.1–2.11.5, 3.0).
+- wrangler.jsonc — D1 binding DB using the existing pharmacology-legends-db database ID.
 
-NOTA 2.1 DAN 2.2
-2.1 diambil daripada nota “4) LN(6).docx”: Introduction to Pharmacology.
-2.2 diambil daripada nota “4) LN(7).docx”: Sources of Drugs and Drug Uses.
+Login:
+- Full matric number only, e.g. DPNS1/2026(05)-0001.
+- Trainee then chooses Team A–F.
 
-Jika Windows Firewall bertanya, benarkan Python untuk Private Network.
-Jika telefon tidak boleh masuk, semak bahawa semua peranti pada Wi-Fi yang sama dan gunakan alamat IP laptop yang dipaparkan pada Game Master.
+Assessment/game:
+- 180 missions: Nutrition 60 (30 MCQ, 15 SEQ, 15 Clinical) + Pharmacology 120 (55 MCQ, 25 SEQ, 40 Clinical).
+- Individual: correct/earned normalized points only, no penalty; /180 -> CONT /20%.
+- Team: correct +1, wrong -1.
+- MCQ 45s; SEQ/Clinical 120s; automatic advance when timer expires.
+- Randomized mission order per battle; MCQ options sorted shortest to longest while preserving the correct answer.
+- Team leaderboard is public; other trainees' individual marks are hidden.
+- GM sees full individual marks, submissions and report.
+- Question Bank is GM-only; edits question/options/correct answer/reference answer/rubric.
+- CSV and Excel report.
+- Autosave in D1; controlled GM reset.
+- Attack/HP/team battle and 10 Final Boss missions.
+- DOPS and official Final assessment are not included in CONT game calculation.
+- Original WebAudio MOBA-style music/SFX; no Mobile Legends audio.
+
+Deployment:
+Use worker.js as the Worker source. The Worker serves its embedded index.html, so no separate static-site deployment is required.
+Keep the existing D1 binding name DB and existing database. Do not create a new D1 database.
