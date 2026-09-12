@@ -30,3 +30,5 @@ Assessment/game:
 Deployment:
 Use worker.js as the Worker source. The Worker serves its embedded index.html, so no separate static-site deployment is required.
 Keep the existing D1 binding name DB and existing database. Do not create a new D1 database.
+
+PATCH: Fixed a runtime bug where the embedded HTML used an unresolved asset_js placeholder. Team buttons and original WebAudio controls now initialize correctly.
