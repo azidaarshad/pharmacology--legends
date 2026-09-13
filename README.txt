@@ -1,2 +1,8 @@
 NSNT LEGENDS FINAL — TRAINNING SEASONS
-Deploy worker.js + public/ + wrangler.jsonc. Do not mix older files.
+
+Canonical frontend: public/index.html served by Cloudflare Workers Assets (ASSETS binding).
+Music: public/assets/training_seasons.mp3
+Topics: 22 PNG visuals.
+Backend: worker.js + D1 binding DB.
+
+Deploy exactly this set. Do not mix with older NSNT Legends files.
