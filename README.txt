@@ -1,8 +1,9 @@
-NSNT LEGENDS FINAL — TRAINNING SEASONS
+NSNT Legends — TRAINNING SEASONS
 
-Canonical frontend: public/index.html served by Cloudflare Workers Assets (ASSETS binding).
-Music: public/assets/training_seasons.mp3
-Topics: 22 PNG visuals.
-Backend: worker.js + D1 binding DB.
-
-Deploy exactly this set. Do not mix with older NSNT Legends files.
+FINAL BUILD NOTES
+- Replace the complete project with this ZIP. Keep the existing Cloudflare D1 database/binding.
+- Trainer cannot enter GM Control Room without the GM PIN.
+- GM PIN: NSNTGM2026
+- MCQ timer is automatic: 45 seconds.
+- SEQ/Clinical timer is automatic: 120 seconds.
+- Do not delete the D1 database when replacing the project files.
