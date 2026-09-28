@@ -1,0 +1,6 @@
+NSNT Legends original SFX
+Main BGM: training_seasons.mp3
+SFX:
+ui_click, team_select, battle_start, attack, hit, damage, boss_appear,
+timer_warning, correct, wrong, victory, defeat, gm_reset.
+The frontend uses these files for the corresponding game events.
