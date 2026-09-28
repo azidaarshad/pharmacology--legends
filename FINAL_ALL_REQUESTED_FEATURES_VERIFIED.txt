@@ -1,0 +1,19 @@
+NSNT LEGENDS — FINAL ALL REQUESTED FEATURES VERIFIED
+
+This package is the complete project. It includes the existing Worker/frontend, 180-question bank, TRAINNING SEASONS audio, 22 topic visuals, GM controls, Team A–F selection, JOIN validation, progress persistence, timers, scoring, randomisation, attack/HP, Final Boss, reports, GM reset, and 12 separate state backgrounds.
+
+12 BACKGROUNDS
+01_main_menu.png — Main Menu
+02_character_select.png — Team selection
+03_world_map.png — World Map
+04_level_forest.png — Hutan/Nutrition
+05_level_snow_mountain.png — Gunung/Snow/Pharmacology
+06_level_underwater.png — Laut/Air
+07_npc_dialogue.png — NPC/SEQ/Clinical
+08_quiz_minigame.png — Quiz/Mini Game
+09_battle_boss_fight.png — Battle/Boss
+10_victory_level_complete.png — Victory
+11_try_again_game_over.png — Try Again
+12_leaderboard.png — Leaderboard
+
+IMPORTANT: JOIN BATTLE requires a Team A–F selection first. Matric is sent as player_id and the selected team is sent to the Worker.

@@ -1,0 +1,79 @@
+NSNT LEGENDS — FINAL TRAINNING SEASONS + TEAM/JOIN FIX + BACKGROUNDS
+=====================================================================
+
+VERIFIED PACKAGE CONTENT
+------------------------
+Main question bank: 180 questions exactly (NSNT:0 through NSNT:179)
+TRAINNING SEASONS: training_seasons.mp3
+Topic visuals: 22 separate PNG files
+Main game backgrounds: 12 separate PNG files
+
+BACKGROUND MAP
+--------------
+01_main_menu.png              Main Menu / opening screen
+02_character_select.png       Team A–F selection
+03_world_map.png              Lobby/map before mission starts
+04_level_forest.png           Nutrition topics (1.1–1.6)
+05_level_snow_mountain.png    Pharmacology topics (2.1–2.11.5)
+06_level_underwater.png       Topic 3.0 / complementary & alternative medicine
+07_npc_dialogue.png           SEQ / Clinical questions
+08_quiz_minigame.png          General quiz fallback
+09_battle_boss_fight.png      Final Boss
+10_victory_level_complete.png 180/180 mission complete
+11_try_again_game_over.png    Try Again / Game Over asset included for future/explicit
+                               game-over state
+12_leaderboard.png            GM Control / leaderboard
+
+The frontend maps the backgrounds individually using BACKGROUNDS + setBackground().
+The active mission mapping was verified so Topic 3.0 uses the underwater background;
+Boss and Complete states have their own dedicated backgrounds.
+
+CORE GAME REQUIREMENTS
+----------------------
+- TRAINNING SEASONS replaces On My Way
+- Team A–F are clickable buttons
+- Selected team is highlighted
+- Full matric format: DPNS1/2026(05)-0001
+- JOIN blocked until a team is selected
+- JOIN sends matric + team to Worker
+- Matric is player ID and progress key
+- 180 questions exactly
+- MCQ 45 seconds
+- SEQ/Clinical 120 seconds
+- Individual /180 -> CONT /20%
+- Team +1 / -1
+- Team leaderboard
+- Other trainees' individual marks hidden
+- Randomisation
+- A→D shorter→longer while preserving correct answer
+- Cara Bermain
+- GM Question Bank
+- Edit question/options/answer/rubric
+- Mark Report
+- GM Reset
+- Attack + HP
+- Final Boss
+- 22 topic visuals
+- Original SFX
+- Auto-save
+
+PROJECT STRUCTURE
+-----------------
+NSNT_Legends/
+├── worker.js
+├── wrangler.jsonc
+├── BACKGROUND_ASSET_MAP.txt
+├── FINAL_PACKAGE_CHECKLIST.txt
+└── public/
+    ├── index.html
+    └── assets/
+        ├── 22 topic PNG files
+        ├── training_seasons.mp3
+        └── backgrounds/
+            └── 12 separate background PNG files
+
+IMPORTANT
+---------
+Keep the complete folder structure. Do not merge the 12 backgrounds into one
+collage. Deploy/replace the project as a complete unit and preserve the existing
+Cloudflare D1 binding/database.

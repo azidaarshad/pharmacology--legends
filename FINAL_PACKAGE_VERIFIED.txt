@@ -1,0 +1,28 @@
+NSNT LEGENDS — FINAL CLEAN PACKAGE
+=====================================
+
+Use this ZIP as the complete project.
+
+Structure:
+- worker.js
+- wrangler.jsonc
+- public/index.html
+- public/assets/training_seasons.mp3
+- public/assets/*.wav (13 original SFX)
+- public/assets/backgrounds/*.png (12 separate backgrounds)
+- all existing topic visuals and game assets
+
+SFX location:
+public/assets/
+(no duplicate public/assets/sfx/ folder)
+
+Background location:
+public/assets/backgrounds/
+
+The package was checked for:
+- core project files
+- 13 SFX files
+- 12 separate background files
+- training_seasons.mp3
+- absence of duplicate sfx folder
+- frontend references to the direct SFX asset location

@@ -1,0 +1,24 @@
+NSNT LEGENDS — SFX INTEGRATION
+=============================
+The SFX files are stored in BOTH:
+  public/assets/
+  public/assets/sfx/
+
+The frontend actively loads the files from public/assets/*.wav.
+
+Events:
+ui_click.wav      = button / answer selection
+team_select.wav   = Team A–F selection
+battle_start.wav  = JOIN BATTLE / Attack Battle start
+attack.wav        = attack action
+hit.wav           = attack answer submitted / impact
+damage.wav        = damage
+boss_appear.wav   = Final Boss screen
+timer_warning.wav = last 10 seconds
+correct.wav       = correct/success
+wrong.wav         = wrong/error
+victory.wav       = 180/180 complete
+defeat.wav        = defeat/try again
+gm_reset.wav      = GM Reset
+
+TRAINNING SEASONS remains the main BGM.

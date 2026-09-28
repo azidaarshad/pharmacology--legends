@@ -1,0 +1,5 @@
+Audio package check
+===================
+Main BGM: public/assets/training_seasons.mp3
+Original SFX: public/assets/sfx/ (13 WAV files)
+Existing game files and all backgrounds retained.

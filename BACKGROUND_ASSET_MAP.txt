@@ -1,0 +1,28 @@
+NSNT LEGENDS — BACKGROUND & ASSET MANIFEST
+
+MAIN GAME BACKGROUNDS (each is a separate PNG):
+01_main_menu.png              = Main Menu
+02_character_select.png       = Pilih Karakter / Team Selection
+03_world_map.png              = Peta / World Map
+04_level_forest.png           = Level: Hutan
+05_level_snow_mountain.png    = Level: Gunung / Snow
+06_level_underwater.png       = Level: Laut / Air
+07_npc_dialogue.png           = NPC / Dialogue
+08_quiz_minigame.png          = Quiz / Mini Game
+09_battle_boss_fight.png      = Battle / Boss Fight
+10_victory_level_complete.png = Level Selesai / Win
+11_try_again_game_over.png    = Gagal / Try Again
+12_leaderboard.png            = Leaderboard / GM Control
+
+The frontend already maps these files individually through BACKGROUNDS and
+setBackground(), so the game switches the background according to screen/state.
+
+TOPIC VISUALS:
+22 separate topic PNG files are stored directly under public/assets/.
+
+AUDIO:
+training_seasons.mp3 = TRAINNING SEASONS (replaces On My Way)
+
+DEPLOYMENT:
+Keep the complete public/assets/backgrounds/ folder.
+Do not merge the 12 background images into a single collage.
