@@ -1,11 +1,13 @@
-NSNT LEGENDS — GM RESET FIX
+NSNT LEGENDS — GM RESET FIX VERIFIED
 
-Fixed:
-1. GM PIN is retained in sessionStorage during the active browser session.
-2. GM API requests now send BOTH gm=1 + key query parameter and x-gm-key header.
-3. RESET ROOM therefore reaches the Worker with the GM credential.
-4. Reset clears trainees, answers, boss scores, attack sessions, team HP/XP/coins, battle state, timer and progress.
-5. Question-bank edits are preserved by RESET ROOM; reset is a progress/session reset, not a question-bank wipe.
-6. Frontend and Worker syntax checks passed with Node.js --check.
+This package includes the GM RESET UI fix.
 
-GM PIN configured in Worker: NSNTGM2026
+When GM RESET succeeds:
+- D1 players/answers/boss_scores/attack_sessions are reset by worker.js.
+- Team HP/XP/coins and mission state return to lobby defaults.
+- The trainee matric input field is explicitly cleared.
+- nsnt_pid is removed from localStorage.
+- Team selection and JOIN button are reset.
+- Question Bank overrides are preserved.
+
+Note: structural/source verification was performed; live Cloudflare browser runtime testing is not claimed by this package.
