@@ -1,0 +1,11 @@
+NSNT LEGENDS — AUTO MARK FIX V4
+
+SEQ/Clinical answers are now scored and saved automatically when submitted.
+- No manual GM MARK is required.
+- MCQ: correct = individual +1, team +1; wrong = individual 0, team -1.
+- SEQ/Clinical: deterministic automatic score 0-100 is calculated from the reference answer/rubric text.
+- >=50: individual +1, team +1.
+- <50: individual 0, team -1.
+- The score, individual point, team point and AUTO mark are saved in D1 immediately.
+- GM Control Room displays Auto instead of a manual MARK button.
+- Existing /api/mark-open endpoint is retained for compatibility but is no longer exposed in the UI.

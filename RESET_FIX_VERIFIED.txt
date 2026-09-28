@@ -1,13 +1,1 @@
-NSNT LEGENDS — GM RESET FIX VERIFIED
-
-This package includes the GM RESET UI fix.
-
-When GM RESET succeeds:
-- D1 players/answers/boss_scores/attack_sessions are reset by worker.js.
-- Team HP/XP/coins and mission state return to lobby defaults.
-- The trainee matric input field is explicitly cleared.
-- nsnt_pid is removed from localStorage.
-- Team selection and JOIN button are reset.
-- Question Bank overrides are preserved.
-
-Note: structural/source verification was performed; live Cloudflare browser runtime testing is not claimed by this package.
+NSNT Legends RESET FIX V3\n\nGM RESET clears D1 player/progress data. Trainee clients with a stale localStorage nsnt_pid now detect that their player record no longer exists on the next /api/state poll, clear the matric, clear team selection, re-enable lobby state, and require the trainee to enter the matric again.\n
