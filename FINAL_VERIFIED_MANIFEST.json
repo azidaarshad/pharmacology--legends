@@ -1,0 +1,53 @@
+{
+  "status": "FINAL BUILD VERIFIED",
+  "legacy_questions": 180,
+  "added_nsnt2023_questions": 20,
+  "total_questions": 200,
+  "added_keys": [
+    "NSNT2023:1",
+    "NSNT2023:2",
+    "NSNT2023:3",
+    "NSNT2023:4",
+    "NSNT2023:5",
+    "NSNT2023:6",
+    "NSNT2023:7",
+    "NSNT2023:8",
+    "NSNT2023:9",
+    "NSNT2023:10",
+    "NSNT2023:11",
+    "NSNT2023:12",
+    "NSNT2023:13",
+    "NSNT2023:14",
+    "NSNT2023:15",
+    "NSNT2023:16",
+    "NSNT2023:17",
+    "NSNT2023:18",
+    "NSNT2023:19",
+    "NSNT2023:20"
+  ],
+  "types": {
+    "MCQ": 105,
+    "SEQ": 40,
+    "CLINICAL": 55
+  },
+  "subjects": {
+    "Nutrition": 66,
+    "Pharmacology": 134
+  },
+  "topic_visual_assets": 22,
+  "audio_asset": "public/assets/training_seasons.mp3",
+  "note": "The 180 legacy questions and core legacy game mechanics are retained; the 20 corrected NSNT 2023 questions are appended as NSNT2023:1..20. The music file is an original offline fallback generated for this package, not a recovered copy of an earlier audio file.",
+  "verification_update": {
+    "date": "2026-10-01",
+    "active_missions": 95,
+    "active_mcq": 90,
+    "active_seq": 5,
+    "active_clinical": 0,
+    "bank_total": 200,
+    "randomization": "per-trainee; shuffle within unit; fixed Unit 1 → Unit 2 → Unit 3",
+    "frozen_missions_hidden_from_trainees": true,
+    "score_max_active": 95,
+    "cont_max": 20,
+    "ui_score_display": "/95"
+  }
+}
