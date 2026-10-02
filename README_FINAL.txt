@@ -45,3 +45,6 @@ Other code/UI corrections in this build:
 - All trainee/report score displays corrected to /95.
 - Help text corrected from 200 missions to 95 active missions.
 - 200 remains the GM Question Bank total.
+
+
+RUNTIME FIX VERIFIED: embedded trainee page now receives the real TOPICS object; the previous TOPICS_PLACE placeholder has been removed so Team A-F buttons initialize correctly. Trainee individual maximum is displayed as /95.

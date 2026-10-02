@@ -1,5 +1,5 @@
 {
-  "status": "FINAL BUILD — VERIFIED",
+  "status": "FINAL BUILD — RUNTIME FIX VERIFIED",
   "legacy_questions": 180,
   "added_nsnt2023_questions": 20,
   "total_questions": 200,
@@ -53,5 +53,7 @@
   "deployment_database_name": "pharmacology-legends-db",
   "deployment_binding": "DB",
   "deployment_note": "Existing Cloudflare dashboard binding is DB → pharmacology-legends-db. Database UUID verified from the supplied Cloudflare D1 URL. No new database should be created.",
-  "deployment_database_id": "74302a40-7221-4a0f-873f-6ef2780a31f9"
+  "deployment_database_id": "74302a40-7221-4a0f-873f-6ef2780a31f9",
+  "runtime_fix": "Replaced embedded TOPICS_PLACE with actual topic map; Team A-F UI initialization now executes.",
+  "trainee_score_display": "95 active missions"
 }
